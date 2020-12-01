@@ -3,12 +3,11 @@ package app;
 public class MainCommu {
 	public static void main(String[] args) {
 		
-		String [] names = {"パパ","友達","上司",};
-		Communication home = new HomeCommu();
+		String name = "友達";
+		Communication work = new WorkCommu();
 		try {
-			for (String name : names) {
-				System.out.println(home.greet(name));
-			}
+			System.out.println(work.greet(name));
+			
 		} catch (Exception ex) {
 			System.out.println(ex.getMessage());
 			
